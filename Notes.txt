@@ -1,0 +1,3 @@
+here we don't have pages instead having tabs (screens)
+npx expo customize metro.config.js ->  this'll generate the config file
+nativewind-env.d.ts -> these files enable the ts to the types and prevent erros msgs
