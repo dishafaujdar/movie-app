@@ -1,15 +1,14 @@
-import {icons} from "/home/disha/native_pro/my-app/constants/icons";
-import { images } from "/home/disha/native_pro/my-app/constants/images"
+import { icons } from "/home/disha/native_pro/my-app/constants/icons";
+import { images } from "/home/disha/native_pro/my-app/constants/images";
 import { Tabs } from "expo-router";
 import { ImageBackground, Image, Text, View } from "react-native";
-
 
 function TabIcon({ focused, icon, title }: any) {
   if (focused) {
     return (
       <ImageBackground
         source={images.highlight}
-        className="flex flex-row w-full flex-1 min-w-[112px] min-h-14 mt-4 justify-center items-center rounded-full overflow-hidden"
+        className="flex flex-row w-full flex-1 min-w-[112px] min-h-16 mt-4 justify-center items-center rounded-full overflow-hidden"
       >
         <Image source={icon} tintColor="#151312" className="size-5" />
         <Text className="text-secondary text-base font-semibold ml-2">
@@ -73,7 +72,7 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
-        name="save"
+        name="saved"
         options={{
           title: "Save",
           headerShown: false,
